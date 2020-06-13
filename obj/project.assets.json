@@ -2,6 +2,25 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
+      "Cloudcrate.AspNetCore.Blazor.Browser.Storage/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Cloudcrate.AspNetCore.Blazor.Browser.Storage.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Cloudcrate.AspNetCore.Blazor.Browser.Storage.dll": {}
+        },
+        "build": {
+          "buildTransitive/Cloudcrate.AspNetCore.Blazor.Browser.Storage.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Cloudcrate.AspNetCore.Blazor.Browser.Storage.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/3.1.3": {
         "type": "package",
         "dependencies": {
@@ -434,6 +453,23 @@
     }
   },
   "libraries": {
+    "Cloudcrate.AspNetCore.Blazor.Browser.Storage/3.0.0": {
+      "sha512": "HWfaNORTZoykBX7pUD4bux94kQzsJNmPu4Sp04qU+PWEF/haMEYNHfWKDi3hxhLRP5tGICnhW2RKPZQS4y38iQ==",
+      "type": "package",
+      "path": "cloudcrate.aspnetcore.blazor.browser.storage/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Cloudcrate.AspNetCore.Blazor.Browser.Storage.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Cloudcrate.AspNetCore.Blazor.Browser.Storage.props",
+        "buildTransitive/Cloudcrate.AspNetCore.Blazor.Browser.Storage.props",
+        "cloudcrate.aspnetcore.blazor.browser.storage.3.0.0.nupkg.sha512",
+        "cloudcrate.aspnetcore.blazor.browser.storage.nuspec",
+        "lib/netstandard2.0/Cloudcrate.AspNetCore.Blazor.Browser.Storage.dll",
+        "staticwebassets/Storage.js"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/3.1.3": {
       "sha512": "ujHcZtQJcloThrt7NFQtUU9wqM1RsiItSQTz+W9yKyGrsWQyNnQY+lJvpUCVHzOqaQrxKRV4AHdUxtGquQPTcg==",
       "type": "package",
@@ -1444,6 +1480,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
+      "Cloudcrate.AspNetCore.Blazor.Browser.Storage >= 3.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 3.2.0",
       "Microsoft.AspNetCore.Components.WebAssembly.Build >= 3.2.0",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 3.2.0",
@@ -1485,6 +1522,10 @@
     "frameworks": {
       "netstandard2.1": {
         "dependencies": {
+          "Cloudcrate.AspNetCore.Blazor.Browser.Storage": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "Microsoft.AspNetCore.Components.WebAssembly": {
             "target": "Package",
             "version": "[3.2.0, )"
