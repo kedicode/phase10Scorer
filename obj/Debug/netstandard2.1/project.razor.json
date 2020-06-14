@@ -58,6 +58,55 @@
       },
       {
         "Kind": "Components.Component",
+        "Name": "phase10Scorer.Pages.FetchData",
+        "AssemblyName": "phase10Scorer",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "phase10Scorer.Pages.FetchData"
+        }
+      },
+      {
+        "Kind": "Components.Component",
+        "Name": "phase10Scorer.Pages.FetchData",
+        "AssemblyName": "phase10Scorer",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "phase10Scorer.Pages.FetchData",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "phase10Scorer.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "Kind": "Components.Component",
         "Name": "phase10Scorer.Pages.Counter",
         "AssemblyName": "phase10Scorer",
         "Documentation": null,
@@ -156,14 +205,14 @@
       },
       {
         "Kind": "Components.Component",
-        "Name": "phase10Scorer.Pages.FetchData",
+        "Name": "phase10Scorer.Pages.Game",
         "AssemblyName": "phase10Scorer",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "FetchData",
+            "TagName": "Game",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -175,19 +224,19 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "phase10Scorer.Pages.FetchData"
+          "Common.TypeName": "phase10Scorer.Pages.Game"
         }
       },
       {
         "Kind": "Components.Component",
-        "Name": "phase10Scorer.Pages.FetchData",
+        "Name": "phase10Scorer.Pages.Game",
         "AssemblyName": "phase10Scorer",
         "Documentation": null,
         "TagOutputHint": null,
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "phase10Scorer.Pages.FetchData",
+            "TagName": "phase10Scorer.Pages.Game",
             "ParentTag": null,
             "TagStructure": 0,
             "Attributes": [],
@@ -199,7 +248,7 @@
         "Diagnostics": [],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "phase10Scorer.Pages.FetchData",
+          "Common.TypeName": "phase10Scorer.Pages.Game",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -16517,6 +16566,11 @@
       "FilePath": "/home/keenan/Projects/phase10Scorer/_Imports.razor",
       "TargetPath": "_Imports.razor",
       "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "/home/keenan/Projects/phase10Scorer/Pages/Game.razor",
+      "TargetPath": "Pages\\Game.razor",
+      "FileKind": "component"
     },
     {
       "FilePath": "/home/keenan/Projects/phase10Scorer/Shared/SurveyPrompt.razor",
