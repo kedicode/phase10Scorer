@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/keenan/Projects/phase10Scorer/phase10Scorer.csproj": {}
+    "/home/keenan/Projects/phase10Scorer/phase10Scorer.Blazor/phase10Scorer.csproj": {}
   },
   "projects": {
-    "/home/keenan/Projects/phase10Scorer/phase10Scorer.csproj": {
+    "/home/keenan/Projects/phase10Scorer/phase10Scorer.Blazor/phase10Scorer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/keenan/Projects/phase10Scorer/phase10Scorer.csproj",
+        "projectUniqueName": "/home/keenan/Projects/phase10Scorer/phase10Scorer.Blazor/phase10Scorer.csproj",
         "projectName": "phase10Scorer",
-        "projectPath": "/home/keenan/Projects/phase10Scorer/phase10Scorer.csproj",
+        "projectPath": "/home/keenan/Projects/phase10Scorer/phase10Scorer.Blazor/phase10Scorer.csproj",
         "packagesPath": "/home/keenan/.nuget/packages/",
-        "outputPath": "/home/keenan/Projects/phase10Scorer/obj/",
+        "outputPath": "/home/keenan/Projects/phase10Scorer/phase10Scorer.Blazor/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/keenan/.nuget/NuGet/NuGet.Config"
@@ -39,10 +39,6 @@
             "Cloudcrate.AspNetCore.Blazor.Browser.Storage": {
               "target": "Package",
               "version": "[3.0.0, )"
-            },
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[*, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
