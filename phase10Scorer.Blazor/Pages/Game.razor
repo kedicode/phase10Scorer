@@ -1,0 +1,99 @@
+@using Cloudcrate.AspNetCore.Blazor.Browser.Storage;
+@page "/game"
+@inject LocalStorage Storage
+@inject GameService Games
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" 
+    crossorigin="anonymous">
+<h1>Games</h1>
+<div class="row justify-content-center"><button class="btn btn-primary" @onclick="CreateGame">Create Game</button>
+</div>
+<div id="games_tbl">
+    @if(_games.Any())
+    {
+        @foreach (var game in _games)
+        {
+            <table  class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Game</th>
+                        <th>Players</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            @foreach (var player in _players)
+                            {
+                                <span class="player_lbl">@player.Name</span>
+                            }
+                            <input value="@PlayerName"
+                                    @onchange="@((ChangeEventArgs e) => PlayerName = e.Value.ToString())" />
+                            <button @onclick="AddPlayer"><span class="fa fa-plus"></span></button>
+                            <button @onclick="RemovePlayer" class="fa fa-minus"></button>
+                        </td>
+                        <td><button class="btn btn-success">Start</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        }
+    }
+</div>
+<div class="message">
+    <span></span>
+</div>
+<style>
+    .player_lbl{
+        background: teal;
+        border-radius: 5px;
+        padding: 5px;
+        display: block;
+        margin-bottom: 5px;
+    }
+</style> 
+
+@code
+{
+    private List<Player> _players = new List<Player>();
+
+    private List<phase10Scorer.Models.Game> _games;
+    public string PlayerName { get; set; }
+
+    private void CreateGame()
+    {
+        _games.Add(new phase10Scorer.Models.Game());
+    }
+    private void AddPlayer()
+    {
+        if(!string.IsNullOrWhiteSpace(PlayerName)) {
+            _players.Add(new Player
+            {
+                Name = PlayerName
+                
+    
+            });
+        }
+        PlayerName = null;
+    }
+
+    private void RemovePlayer(MouseEventArgs e)
+    {
+        if(_players.Count > 0)
+        {
+            _players.RemoveAt(_players.Count -1);
+        }
+    }
+
+    protected override void OnInitialized()
+    {
+        GetGames();
+    }
+    private void GetGames()
+    {
+        _games = Games.GetGames().ToList();
+    }
+}
